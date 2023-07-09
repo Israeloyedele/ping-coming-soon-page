@@ -1,0 +1,136 @@
+* {
+    font-family: 'Libre Franklin', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    color: hsl(209, 33%, 12%);
+}
+body {
+    display: grid;
+    place-items: center;
+}
+.container {
+    width: 100%;
+    padding: 100px 30px 40px 30px;
+}
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: center;
+}
+.heading {
+    margin-bottom: 30px;
+}
+.light {
+    font-weight: 100;
+    color: hsl(0, 0%, 59%);
+}
+.head-text {
+    margin-bottom: 40px;
+}
+.form input {
+    width: 90%;
+    padding: 16px 20px;
+    border-radius: 25px;
+    border: 1px solid hsl(0, 0%, 59%);
+    text-align: left;
+}
+.form.invalid input {
+    border: 1px solid hsl(354, 100%, 66%);
+}
+.form div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 20px;
+}
+label {
+    padding-top: 10px;
+    font-style: italic;
+    color: hsl(354, 100%, 66%);
+    display: none;
+}
+.form.invalid label {
+    display: block;
+}
+.form button {
+    border: none;
+    width: 90%;
+    padding: 16px;
+    border-radius: 25px;
+    color: white;
+    background-color: hsl(223, 87%, 63%);
+    font-weight: 700;
+    box-shadow: 0px 3px 12px -1px rgba(79,125,243,0.75);
+}
+.form button:hover {
+    cursor: pointer;
+    transform: translateY(-0.1em);
+}
+.form {
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+.illustration {
+    width: 100%;
+    margin: 70px 0;
+}
+.dashboard {
+    width: 100%;
+}
+.icons-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.fa-brands {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid hsla(223, 87%, 63%, 0.5);
+    border-radius: 50%;
+    margin: 0 10px;
+    width: 40px;
+    height: 40px;
+    color: hsl(223, 87%, 63%);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.fa-brands:hover {
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+    cursor: pointer;
+    transform: translateY(-0.1em);
+}
+.copy {
+    color: hsl(0, 0%, 59%);
+}
+
+@media (min-width:600px) {
+    .container {
+        max-width: 750px;
+    }
+    .form {
+        display: flex;
+        justify-content: space-between;
+    }
+    .form input {
+        width: 100%;
+        margin: 0;
+    }
+    .form div {
+        width: 70%;
+        align-items: flex-start;
+    }
+    label {
+        padding-left: 15px;
+    }
+    .form button {
+        width: 27%;
+        height: 49.5px;
+    }
+}
